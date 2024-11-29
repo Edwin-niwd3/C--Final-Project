@@ -96,7 +96,7 @@ namespace MyApp
           Console.WriteLine(Prolouge_Lines[0,j]);
           if(j != 0)
           {
-            Console.WriteLine("Press any key to continue...");
+            Console.WriteLine("\n\nPress any key to continue...");
           }
           Console.ReadKey();
           Console.Clear();
@@ -139,7 +139,7 @@ namespace MyApp
         else
         {
           Console.WriteLine(Prolouge_Lines[1,j]);
-          Console.WriteLine("Press any key to continue!");
+          Console.WriteLine("\n\nPress any key to continue!");
           Console.ReadLine();
           Console.Clear();
         }
