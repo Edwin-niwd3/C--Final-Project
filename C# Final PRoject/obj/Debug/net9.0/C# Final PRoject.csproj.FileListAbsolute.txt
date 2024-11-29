@@ -1,0 +1,15 @@
+C:\Users\luigi\Desktop\C# Final Project\C# Final PRoject\bin\Debug\net9.0\C# Final PRoject.exe
+C:\Users\luigi\Desktop\C# Final Project\C# Final PRoject\bin\Debug\net9.0\C# Final PRoject.deps.json
+C:\Users\luigi\Desktop\C# Final Project\C# Final PRoject\bin\Debug\net9.0\C# Final PRoject.runtimeconfig.json
+C:\Users\luigi\Desktop\C# Final Project\C# Final PRoject\bin\Debug\net9.0\C# Final PRoject.dll
+C:\Users\luigi\Desktop\C# Final Project\C# Final PRoject\bin\Debug\net9.0\C# Final PRoject.pdb
+C:\Users\luigi\Desktop\C# Final Project\C# Final PRoject\obj\Debug\net9.0\C# Final PRoject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luigi\Desktop\C# Final Project\C# Final PRoject\obj\Debug\net9.0\C# Final PRoject.AssemblyInfoInputs.cache
+C:\Users\luigi\Desktop\C# Final Project\C# Final PRoject\obj\Debug\net9.0\C# Final PRoject.AssemblyInfo.cs
+C:\Users\luigi\Desktop\C# Final Project\C# Final PRoject\obj\Debug\net9.0\C# Final PRoject.csproj.CoreCompileInputs.cache
+C:\Users\luigi\Desktop\C# Final Project\C# Final PRoject\obj\Debug\net9.0\C# Final PRoject.sourcelink.json
+C:\Users\luigi\Desktop\C# Final Project\C# Final PRoject\obj\Debug\net9.0\C# Final PRoject.dll
+C:\Users\luigi\Desktop\C# Final Project\C# Final PRoject\obj\Debug\net9.0\refint\C# Final PRoject.dll
+C:\Users\luigi\Desktop\C# Final Project\C# Final PRoject\obj\Debug\net9.0\C# Final PRoject.pdb
+C:\Users\luigi\Desktop\C# Final Project\C# Final PRoject\obj\Debug\net9.0\C# Final PRoject.genruntimeconfig.cache
+C:\Users\luigi\Desktop\C# Final Project\C# Final PRoject\obj\Debug\net9.0\ref\C# Final PRoject.dll

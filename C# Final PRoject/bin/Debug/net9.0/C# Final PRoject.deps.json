@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "C# Final PRoject/1.0.0": {
+        "runtime": {
+          "C# Final PRoject.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "C# Final PRoject/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
