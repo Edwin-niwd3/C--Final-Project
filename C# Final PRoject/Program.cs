@@ -3,6 +3,8 @@ using System.Collections;
 using System.Dynamic;
 using System.Reflection.PortableExecutable;
 using System.Runtime.CompilerServices;
+using System.Threading.Tasks.Dataflow;
+using System.Xml.Serialization;
 
 namespace MyApp
 {
@@ -13,7 +15,6 @@ namespace MyApp
     private bool Battle_Ending_flag {get;set;} = false;
     private bool Neutral_Ending_flag {get;set;} = false;
     private bool catCheck {get; set;} = false;
-    private char playerChoice {get;set;} = 'z';
     //This is going to be a 2d array
     //Turns out 2d Arrays have to be the same size for each portion, which sucks this will be an extremely dumb design...
     public string[,] Prolouge_Lines = {
@@ -26,12 +27,15 @@ namespace MyApp
       };
     public string[,] NPC_Lines = {
       {
+        //Lady
         "You approach a fancy looking woman...", "Oliver:\nNAN"
       },
       {
+        //Divorced man
         "You approach a man who looks like he\'s had a rough time", "Oliver:\nNAN"
       },
       {
+        //Angry Man
         "You approach a man who looks like extremely angry", "Oliver:\nNAN"
       }
     };
@@ -66,6 +70,7 @@ namespace MyApp
       PlayProlouge();
       //Into the Casino
       CasinoScene();
+      PlayEnding();
     }
     public void PlayProlouge()
     {
@@ -109,28 +114,7 @@ namespace MyApp
       {
         if(Prolouge_Lines[1,j] == "Ask choice")
         {
-            Console.WriteLine("a)Talk to woman\nb)Talk to sad dude\nc)Talk to angry dude\nd)Play slots");
-            Console.WriteLine("What would you like to do?");
-            char gChoice = Convert.ToChar(Console.ReadLine());
-            switch(gChoice)
-            {
-              case 'a':
-                //TalkToLady()
-                break;
-              case 'b':
-                //TalkToSad()
-                break;
-              case 'c':
-                //TalkToAngry()
-                break;
-              case 'd':
-                //PlaySlots()
-                break;
-              default:
-                Console.WriteLine("Thats not a choice >:(");
-                //AskQuestion() <-- Maybe make it a function?!?!?
-                break;
-            }
+          CasinoMenu();
         }
         else if (Prolouge_Lines[1,j] == "NAN")
         {
@@ -143,6 +127,118 @@ namespace MyApp
           Console.ReadLine();
           Console.Clear();
         }
+      }
+    }
+    public void CasinoMenu()
+    {
+      Console.WriteLine("a)Talk to woman\nb)Talk to sad dude\nc)Talk to angry dude\nd)Play slots");
+      Console.WriteLine("What would you like to do?");
+      char gChoice = Convert.ToChar(Console.ReadLine());
+      switch(gChoice)
+      {
+        case 'a':
+          TalkToNPC(0);
+          CasinoMenu();
+          break;
+        case 'b':
+          TalkToNPC(1);
+          CasinoMenu();
+          break;
+        case 'c':
+          TalkToNPC(2);
+          CasinoMenu();
+          break;
+        case 'd':
+          PlaySlots();
+          break;
+        default:
+          Console.WriteLine("Thats not a choice >:(");
+          CasinoMenu();
+          break;
+      }
+    }
+
+    public void PlaySlots()
+    {
+      //funi meme
+      if (catCheck)
+      {
+          Console.WriteLine("As you go to the slots, you see a Cat that just won the jackpot");
+      }
+      else
+      {
+        Console.WriteLine("As you enter the slots you see a Dog win the jackpot");
+      }
+      Random random = new Random();
+      bool ThousandOccured = false;
+      bool MillionFlag = false;
+      char PlayerChoice = 'y';
+      const int maxAttempts = 5;
+      Neutral_Ending_flag = true;
+      int attempt = 1;
+      do{
+        // If it's the last attempt and the event hasn't occurred, force it
+        if (attempt == maxAttempts && !ThousandOccured)
+        {
+            Console.WriteLine($"Attempt {attempt}: Event guaranteed to happen!");
+            ThousandOccured = true;
+            attempt+=1;
+        }
+        //You just got the Thousand, now it turns to a million :D
+        else if(ThousandOccured && !MillionFlag)
+        {
+          Current_Money = 1000000;
+          MillionFlag = true;
+          attempt +=1;
+          Bad_Ending_flag = true;
+          Console.WriteLine("You won!");
+          Console.WriteLine($"New bal: {Current_Money}");
+          Console.WriteLine("Oliver:\nIf I do one more I can get even more...");
+          Console.WriteLine("Would you like to play again? y/n");
+          PlayerChoice = Convert.ToChar(Console.ReadLine());
+        }
+        else if(MillionFlag)
+        {
+          Current_Money = 0;
+          Battle_Ending_flag = true;
+          Console.WriteLine("Sorry, You Lost ;)");
+          Console.WriteLine($"New bal: {Current_Money}");
+          break;
+        }
+        else
+        {
+            // Random chance for the event to occur
+            if (random.NextDouble() < 0.3) // 30% chance
+            {
+                Console.WriteLine($"You won!");
+                Current_Money = 1000;
+                Console.WriteLine($"New bal: {Current_Money}");
+                Console.WriteLine("Oliver:\nThis should be enough for rent...but I could get more...");
+                ThousandOccured = true;
+                attempt+=1;
+                Console.WriteLine("Would you like to play again? y/n");
+                PlayerChoice = Convert.ToChar(Console.ReadLine());
+            }
+            //You don't get the thousand
+            else
+            {
+                Console.WriteLine($"Sorry you lost :(.");
+                Current_Money -= 100;
+                Console.WriteLine($"New Bal: {Current_Money}, try again?");
+                Console.WriteLine("Would you like to play again? y/n");
+                PlayerChoice = Convert.ToChar(Console.ReadLine());
+                attempt+=1;
+            }
+        }
+      }while(PlayerChoice == 'y' || PlayerChoice == 'Y');
+    }
+    public void TalkToNPC(int x)
+    {
+      for(int i = 0; i < 2; i++)
+      {
+        Console.WriteLine(NPC_Lines[x,i]);
+        Console.ReadLine();
+        Console.Clear();
       }
     }
 
