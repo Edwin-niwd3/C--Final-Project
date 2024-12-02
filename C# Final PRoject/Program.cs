@@ -139,17 +139,24 @@ namespace MyApp
       switch(gChoice)
       {
         case 'a':
-          TalkToNPC(0);
-          CasinoMenu();
-          break;
+            //TalkToNPC(0);
+            ScarlettConvo();
+            Console.Clear();
+            CasinoMenu();
+            
+            break;
         case 'b':
-          TalkToNPC(1);
-          CasinoMenu();
-          break;
+            //TalkToNPC(1);
+            StefanConvo();
+            Console.Clear();
+            CasinoMenu();
+            break;
         case 'c':
-          TalkToNPC(2);
-          CasinoMenu();
-          break;
+            //TalkToNPC(2);
+            JoeConvo();
+            Console.Clear();
+            CasinoMenu();
+            break;
         case 'd':
           PlaySlots();
           break;
@@ -319,13 +326,264 @@ namespace MyApp
         }
       }
     }
-    public void TalkToNPC(int x)
+
+    public void ScarlettConvo()
     {
-      for(int i = 0; i < 2; i++)
+      char choice = ' ';
+      Console.Clear();
+      Console.WriteLine("Scarlett:\n**Sighs**");
+      Console.WriteLine("\n\nPress any key to continue...");
+      Console.ReadLine();
+      Console.Clear();
+      Console.WriteLine("Scarlett:\nWhy do men always get so bothered when cheat on them?");
+      Console.WriteLine("\n\nPress any key to continue...");
+      Console.ReadLine();
+      Console.Clear();
+      Console.WriteLine("Oliver:\nWhy do you do anyways since you know they are broken hearted?");
+      Console.WriteLine("\n\nPress any key to continue...");
+      Console.ReadLine();
+      Console.Clear();
+      Console.WriteLine("Scarlett:\nBecause BOY, it's fun for me! So tell me what you want already?");
+      Console.WriteLine("\n\nPress any key to continue...");
+      Console.ReadLine();
+      Console.Clear();
+      Console.WriteLine("Oliver: \nWell, You think that you'd have any tips for me so that I could win?");
+      Console.WriteLine("\n\nPress any key to continue...");
+      Console.ReadLine();
+      Console.Clear();
+      Console.WriteLine("Scarlett:\nWell, that would depend.\n\na.) Would you like to know how to make it rich?\nb.) Would you like to know how to survive?\nWhat would you like to know?");
+      choice = Convert.ToChar(Console.ReadLine());
+      
+      if (choice == 'a')
       {
-        Console.WriteLine(NPC_Lines[x,i]);
-        Console.ReadLine();
         Console.Clear();
+        Console.WriteLine("Greed is never the right way to go, I'd advise caution.");
+        Console.WriteLine("\n\nPress any key to continue...");
+        Console.ReadLine();
+          
+      }
+      else if (choice == 'b')
+      {
+        Console.Clear();
+        Console.WriteLine("Favor is always looked at the bold and never at the weak.");
+        Console.WriteLine("\n\nPress any key to continue...");
+        Console.ReadLine();
+          
+      }
+      else
+      {
+        Console.Clear();
+        Console.WriteLine("UGH!!! You are wasting my time get out of here!");
+        Console.WriteLine("\n\nPress any key to continue...");
+        Console.ReadLine();
+
+      }
+        
+    }
+
+    public void StefanConvo()
+    {
+      char choice = ' ';
+      Console.Clear();
+      Console.WriteLine("Stefan:\nMy wife left me for my boss.");
+      Console.WriteLine("\n\nPress any key to continue...");
+      Console.ReadLine();
+      Console.Clear();
+      Console.WriteLine("Stefan: \nMy dog got hit by a car running after my wife leaving.");
+      Console.WriteLine("\n\nPress any key to continue...");
+      Console.ReadLine();
+      Console.Clear();
+      Console.WriteLine("Stefan:\nNow a kid wants to talk with me.\n\na.) Should I jump?\nb.) Have a romantic date with my tub and a toaster?\nc.) Cheer him up? \nWhat would you like to know?");
+      choice = Convert.ToChar(Console.ReadLine());
+
+      if (choice == 'a')
+      {
+          Console.Clear();
+          Console.WriteLine("Stefan:\nYou know what, I like advice.");
+          Console.WriteLine("\n\nPress any key to continue...");
+          Console.ReadLine();
+          Console.Clear();
+          Console.WriteLine("After this drink I'm going to find the nearest bridge, THANK YOU!");
+          Console.WriteLine("\n\nPress any key to continue...");
+          Console.ReadLine();
+          Console.Clear();
+
+      }
+      else if (choice == 'b')
+      {
+          Console.Clear();
+          Console.WriteLine("Stefan:\nMy wife always said that I stunk....");
+          Console.WriteLine("\n\nPress any key to continue...");
+          Console.ReadLine();
+          Console.Clear();
+          Console.WriteLine("Stefan:\nMaybe she was right and finally take a bath.");
+          Console.WriteLine("\n\nPress any key to continue...");
+          Console.ReadLine();
+          Console.Clear();
+          Console.WriteLine("Stefan:\nThank you buddy for helping me see the future light.");
+          Console.WriteLine("\n\nPress any key to continue...");
+          Console.ReadLine();
+
+      }
+      else if (choice == 'c')
+      {
+          Console.Clear();
+          Console.WriteLine("Oliver:\nCheer up buddy, it's not that bad.  There are plenty of fish in that sea.");
+          Console.WriteLine("\n\nPress any key to continue...");
+          Console.ReadLine();
+          Console.Clear();
+          Console.WriteLine("Stefan:\nShe was the best at EVERYTHING and had a figure of a model.");
+          Console.WriteLine("\n\nPress any key to continue...");
+          Console.ReadLine();
+          Console.Clear();
+          Console.WriteLine("Stefan:\nI could never do better I feel.");
+          Console.WriteLine("\n\nPress any key to continue...");
+          Console.ReadLine();
+          Console.Clear();
+          Console.WriteLine("Oliver:\nhmm...That's really rough then.");
+          Console.WriteLine("\n\nPress any key to continue...");
+          Console.ReadLine();
+          Console.Clear();
+          Console.WriteLine("Oliver:\nHey buddy, you mind if I could get your ex-wife's phone number?  She sounds amazing!");
+          Console.WriteLine("\n\nPress any key to continue...");
+          Console.ReadLine();
+          Console.Clear();
+          Console.WriteLine("Stefan:\n**cries uncontrollably as he writes down the number.**");
+          Console.WriteLine("\n\nPress any key to continue...");
+          Console.ReadLine();
+
+
+      }
+      else
+      {
+          Console.Clear();
+          Console.WriteLine("UGH!!! You are wasting my time get out of here!");
+          Console.WriteLine("\n\nPress any key to continue...");
+          Console.ReadLine();
+
+      }
+    }
+
+    public void JoeConvo()
+    {
+      char choice = ' ';
+      Console.Clear();
+      Console.WriteLine("Joe:\nWhat the F*** do you want????");
+      Console.WriteLine("\n\nPress any key to continue...");
+      Console.ReadLine();
+      Console.Clear();
+      Console.WriteLine("Joe:\nThat man Stefan over there got me all bummed out because I had to fire him.");
+      Console.WriteLine("\n\nPress any key to continue...");
+      Console.ReadLine();
+      Console.Clear();
+      Console.WriteLine("Joe:\nYeah I'm his boss, so what! You have a problem with me?.\n\na.) YO!! You stole his wife and killed his dog!\nb.) Instruct Joe to give a toaster to Stefan.\nc.) Gamble to see who steals Stefan's wife.\nWhat would you like to know?");
+      choice = Convert.ToChar(Console.ReadLine());
+
+      if (choice == 'a')
+      {
+          Console.Clear();
+          Console.WriteLine("Joe:\nI did him a favor! **takes another drink**");
+          Console.WriteLine("\n\nPress any key to continue...");
+          Console.ReadLine();
+          Console.Clear();
+          Console.WriteLine("Joe:\nA man like that shouldn't have a wife or live for that matter. Now Get LOST!!");
+          Console.WriteLine("\n\nPress any key to continue...");
+          Console.ReadLine();
+          Console.Clear();
+
+      }
+      else if (choice == 'b')
+      {
+          Console.Clear();
+          Console.WriteLine("Joe:\nWhy in the hell would I give him a toaster?");
+          Console.WriteLine("\n\nPress any key to continue...");
+          Console.ReadLine();
+          Console.Clear();
+          Console.WriteLine("Oliver:\nIt would be a token of good gratitude.  I'm sure that he'll find GREAT use for it.");
+          Console.WriteLine("\n\nPress any key to continue...");
+          Console.ReadLine();
+          Console.Clear();
+          Console.WriteLine("Joe:\nWell, I did steal his wife and killed his dog.  You have a great point.");
+          Console.WriteLine("\n\nPress any key to continue...");
+          Console.ReadLine();
+          Console.Clear();
+          Console.WriteLine("Joe:\n**goes and takes with Stefan and has a toaster over.  Right then Stefan leaves crying with his toaster mumbling something about a bath.**");
+          Console.WriteLine("\n\nPress any key to continue...");
+          Console.ReadLine();
+
+      }
+      else if (choice == 'c')
+      {
+          int guess = 0;
+          Console.Clear();
+          Console.WriteLine("Oliver:\nOH, You don't deserve Scarlett, HAND HER OVER!!");
+          Console.WriteLine("\n\nPress any key to continue...");
+          Console.ReadLine();
+          Console.Clear();
+          Console.WriteLine("Joe:\nListen to the to words coming out of this guys mouth.");
+          Console.WriteLine("\n\nPress any key to continue...");
+          Console.ReadLine();
+          Console.Clear();
+          Console.WriteLine("Joe:\nTell you what, if you could get the number I'm thinking of, between 1-10, Scarlett is all yours!");
+          Console.WriteLine("\n\nPress any key to continue...");
+          Console.ReadLine();
+          Console.Clear();
+          Console.WriteLine("Oliver:\nhmm...You have a deal!");
+          Console.WriteLine("\n\nPress any key to continue...");
+          Console.ReadLine();
+          Console.Clear();
+          Console.WriteLine("Oliver:\nI think the number is....\n\nEnter a number between 1 and 10 to guess:");
+          guess = Convert.ToInt16(Console.ReadLine());
+          Console.Clear();
+          Random rnd = new Random();
+          int rndNum = rnd.Next(1, 10);
+          if (guess == rndNum)
+          {
+              Console.WriteLine("Joe:\nWHAT?! How in the hell did you get that?");
+              Console.WriteLine("\n\nPress any key to continue...");
+              Console.ReadLine();
+              Console.Clear();
+              Console.WriteLine("Joe:\nMan, I was thinking of '" + rndNum + "' .  Which I didn't think you'd get.");
+              Console.WriteLine("\n\nPress any key to continue...");
+              Console.ReadLine();
+              Console.Clear();
+              Console.WriteLine("Joe:\nFINE! Scarlett is all yours.  She was too wild for me anyways.");
+              Console.WriteLine("\n\nPress any key to continue...");
+              Console.ReadLine();
+              Console.Clear();
+              Console.WriteLine("Oliver:\nALRIGHT, I have a new girlfriend! Now I just have to gamble to make some money. LET'S GO!! ");
+              Console.WriteLine("\n\nPress any key to continue...");
+              Console.ReadLine();
+              Console.Clear();
+          }
+          else
+          {
+              Console.WriteLine("Joe:\n**Laughs and then spits in your face**");
+              Console.WriteLine("\n\nPress any key to continue...");
+              Console.ReadLine();
+              Console.Clear();
+              Console.WriteLine("Joe:\nYou are an idiot because you were thinking '" + guess + "', when I was thinking '" + rndNum + "'.");
+              Console.WriteLine("\n\nPress any key to continue...");
+              Console.ReadLine();
+              Console.Clear();
+              Console.WriteLine("Joe:\nNow get out of my face before I seriously hurt you!");
+              Console.WriteLine("\n\nPress any key to continue...");
+              Console.ReadLine();
+              Console.Clear();
+              Console.WriteLine("Oliver:\n**walks away feeling shame and even worst then before**");
+              Console.WriteLine("\n\nPress any key to continue...");
+              Console.ReadLine();
+              Console.Clear();
+          }
+
+      }
+      else
+      {
+          Console.Clear();
+          Console.WriteLine("UGH!!! You are wasting my time get out of here!");
+          Console.WriteLine("\n\nPress any key to continue...");
+          Console.ReadLine();
+
       }
     }
 
