@@ -373,7 +373,7 @@ namespace MyApp
       else
       {
         Console.Clear();
-        Console.WriteLine("UGH!!! You are wasting my time get out of here!");
+        Console.WriteLine("Boo hoo honey, why don't you try your luck somewhere else?");
         Console.WriteLine("\n\nPress any key to continue...");
         Console.ReadLine();
 
@@ -457,7 +457,7 @@ namespace MyApp
       else
       {
         Console.Clear();
-        Console.WriteLine("UGH!!! You are wasting my time get out of here!");
+        Console.WriteLine("Can you just leave me alone?");
         Console.WriteLine("\n\nPress any key to continue...");
         Console.ReadLine();
 
