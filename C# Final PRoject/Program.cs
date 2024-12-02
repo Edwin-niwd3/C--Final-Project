@@ -21,7 +21,7 @@ namespace MyApp
       //When the string says: Ask choice <- then we will put it to the user to allow them to choose their option
       //When a NAN is present, the scene has finished, move on
       //This first part of the array will be all the first scene prolouge lines, so this would be [0][0-23]
-      {"Press Any key to start!", "The night sky seems to extend indefinitly, with no end in sight", "\'ring ring\'", "William:\nHey man, how\'s it been?", "William:\nI\'m calling because I wanted to catch up with whats been going on.", "William:\nRecently, I just got promoted at my job, and I\'m making some good money!", "Oliver:\nOh yeah? Congrats. Sadly  I just got let go from my previous job as a teacher at La Verne High, I was an English Teacher", "William:\nOh damn. Really man? That sucks to hear.", "Oliver:\nYeah they said ChatGPT could do a better job than I could, and let me go", "William:\nAh well, hopefully you can get another job soon. But for some good news, I just proposed to my girlfriend and she said yes!", "Oliver:\nHey thats amazing man! I\'m glad to hear that things are looking up for you.", "Oliver:\nWell, it\'s been nice talking man, talk to you later.", "William:\nYeah man, see ya.", "Oliver:\n...", "Oliver:\nI should eat some food...","Ask choice" ,"Oliver:\nGod I wish things could have worked out for me too. Why does it have to be this way...", "Some time passes...", "Oliver:\nOh no... How am I gonna make this month\'s rent?!? I can\'t believe I still haven\'t found a job...", "A card slips beneath his door", "Oliver:\nWhats this? La Verne Casino.... Maybe I can make some quick cash", "You grab your essentials and makes his way to his car", "Oliver:\nIs this really a good idea? Should I really be trying this?", "Oliver:\nNah, this is a great idea! I\'ll become a fu**ing millionaire and NEVER have to worry about rent again!!!"},
+      {"Press Any key to start!", "The night sky seems to extend indefinitely, with no end in sight", "\'ring ring\'", "William:\nHey man, how\'s it been?", "William:\nI\'m calling because I wanted to catch up with whats been going on.", "William:\nRecently, I just got promoted at my job, and I\'m making some good money!", "Oliver:\nOh yeah? Congrats. Sadly  I just got let go from my previous job as a teacher at La Verne High, I was an English Teacher", "William:\nOh damn. Really man? That sucks to hear.", "Oliver:\nYeah they said ChatGPT could do a better job than I could, and let me go", "William:\nAh well, hopefully you can get another job soon. But for some good news, I just proposed to my girlfriend and she said yes!", "Oliver:\nHey thats amazing man! I\'m glad to hear that things are looking up for you.", "Oliver:\nWell, it\'s been nice talking man, talk to you later.", "William:\nYeah man, see ya.", "Oliver:\n...", "Oliver:\nI should eat some food...","Ask choice" ,"Oliver:\nGod I wish things could have worked out for me too. Why does it have to be this way...", "Some time passes...", "Oliver:\nOh no... How am I gonna make this month\'s rent?!? I can\'t believe I still haven\'t found a job...", "A card slips beneath his door", "Oliver:\nWhats this? La Verne Casino.... Maybe I can make some quick cash", "You grab your essentials and makes his way to his car", "Oliver:\nIs this really a good idea? Should I really be trying this?", "Oliver:\nNah, this is a great idea! I\'ll become a fu**ing millionaire and NEVER have to worry about rent again!!!"},
       //The prolouge has finished, this is now Oliver at the Casino scenes, which are [1][0-23]
       {"The bright flashing lights blind you as you approach the casino", "Oliver:\nI guess this is the casino...", "Oliver:\nHey, this is La Verne Casino right?", "Bouncer:\n...", "Oliver:\nI guess it\'s not... maybe I should just go home...", "Bouncer:\nPass.", "Oliver:\nO-oh...ok (Should I really be doing this?)", "Attendant:\nHello there, and welcome to La Verne Casino. What would you like to play?", "Ask choice", "NAN", "NAN", "NAN", "NAN", "NAN","NAN" ,"NAN", "NAN", "NAN", "NAN", "NAN", "NAN", "NAN", "NAN", "NAN"}
       };
@@ -335,7 +335,7 @@ namespace MyApp
       Console.WriteLine("\n\nPress any key to continue...");
       Console.ReadLine();
       Console.Clear();
-      Console.WriteLine("Scarlett:\nWhy do men always get so bothered when cheat on them?");
+      Console.WriteLine("Scarlett:\nWhy do men always get so bothered when you cheat on them?");
       Console.WriteLine("\n\nPress any key to continue...");
       Console.ReadLine();
       Console.Clear();
@@ -351,7 +351,7 @@ namespace MyApp
       Console.WriteLine("\n\nPress any key to continue...");
       Console.ReadLine();
       Console.Clear();
-      Console.WriteLine("Scarlett:\nWell, that would depend.\n\na.) Would you like to know how to make it rich?\nb.) Would you like to know how to survive?\nWhat would you like to know?");
+      Console.WriteLine("Scarlett:\nWell, that would depend.\n\na.) Would you like to know how to survive?\nb.) Would you like to know how to make it rich?\nWhat would you like to know?");
       choice = Convert.ToChar(Console.ReadLine());
       
       if (choice == 'a')
@@ -365,7 +365,7 @@ namespace MyApp
       else if (choice == 'b')
       {
         Console.Clear();
-        Console.WriteLine("Favor is always looked at the bold and never at the weak.");
+        Console.WriteLine("Fortune favours the bold, but not the stupid");
         Console.WriteLine("\n\nPress any key to continue...");
         Console.ReadLine();
           
@@ -393,73 +393,73 @@ namespace MyApp
       Console.WriteLine("\n\nPress any key to continue...");
       Console.ReadLine();
       Console.Clear();
-      Console.WriteLine("Stefan:\nNow a kid wants to talk with me.\n\na.) Should I jump?\nb.) Have a romantic date with my tub and a toaster?\nc.) Cheer him up? \nWhat would you like to know?");
+      Console.WriteLine("Stefan:\nNow a kid wants to talk with me.\n\na.) \"You should fight with your boss.\"\nb.) \"Make your boss give you a raise for taking your wife.\"\nc.) Cheer him up? \nWhat would you like to do?");
       choice = Convert.ToChar(Console.ReadLine());
 
       if (choice == 'a')
       {
-          Console.Clear();
-          Console.WriteLine("Stefan:\nYou know what, I like advice.");
-          Console.WriteLine("\n\nPress any key to continue...");
-          Console.ReadLine();
-          Console.Clear();
-          Console.WriteLine("After this drink I'm going to find the nearest bridge, THANK YOU!");
-          Console.WriteLine("\n\nPress any key to continue...");
-          Console.ReadLine();
-          Console.Clear();
+        Console.Clear();
+        Console.WriteLine("Stefan:\nYou know what, I like advice.");
+        Console.WriteLine("\n\nPress any key to continue...");
+        Console.ReadLine();
+        Console.Clear();
+        Console.WriteLine("After this drink I'm going to go and give him a piece of my mind.");
+        Console.WriteLine("\n\nPress any key to continue...");
+        Console.ReadLine();
+        Console.Clear();
 
       }
       else if (choice == 'b')
       {
-          Console.Clear();
-          Console.WriteLine("Stefan:\nMy wife always said that I stunk....");
-          Console.WriteLine("\n\nPress any key to continue...");
-          Console.ReadLine();
-          Console.Clear();
-          Console.WriteLine("Stefan:\nMaybe she was right and finally take a bath.");
-          Console.WriteLine("\n\nPress any key to continue...");
-          Console.ReadLine();
-          Console.Clear();
-          Console.WriteLine("Stefan:\nThank you buddy for helping me see the future light.");
-          Console.WriteLine("\n\nPress any key to continue...");
-          Console.ReadLine();
+        Console.Clear();
+        Console.WriteLine("Stefan:\nYou're right!!");
+        Console.WriteLine("\n\nPress any key to continue...");
+        Console.ReadLine();
+        Console.Clear();
+        Console.WriteLine("Stefan:\nThe least he could do is give me a raise for stealing my wife.");
+        Console.WriteLine("\n\nPress any key to continue...");
+        Console.ReadLine();
+        Console.Clear();
+        Console.WriteLine("Stefan:\n**Comes back after confronting his boss**\nWell, that got me fired.  Ah man!");
+        Console.WriteLine("\n\nPress any key to continue...");
+        Console.ReadLine();
 
       }
       else if (choice == 'c')
       {
-          Console.Clear();
-          Console.WriteLine("Oliver:\nCheer up buddy, it's not that bad.  There are plenty of fish in that sea.");
-          Console.WriteLine("\n\nPress any key to continue...");
-          Console.ReadLine();
-          Console.Clear();
-          Console.WriteLine("Stefan:\nShe was the best at EVERYTHING and had a figure of a model.");
-          Console.WriteLine("\n\nPress any key to continue...");
-          Console.ReadLine();
-          Console.Clear();
-          Console.WriteLine("Stefan:\nI could never do better I feel.");
-          Console.WriteLine("\n\nPress any key to continue...");
-          Console.ReadLine();
-          Console.Clear();
-          Console.WriteLine("Oliver:\nhmm...That's really rough then.");
-          Console.WriteLine("\n\nPress any key to continue...");
-          Console.ReadLine();
-          Console.Clear();
-          Console.WriteLine("Oliver:\nHey buddy, you mind if I could get your ex-wife's phone number?  She sounds amazing!");
-          Console.WriteLine("\n\nPress any key to continue...");
-          Console.ReadLine();
-          Console.Clear();
-          Console.WriteLine("Stefan:\n**cries uncontrollably as he writes down the number.**");
-          Console.WriteLine("\n\nPress any key to continue...");
-          Console.ReadLine();
+        Console.Clear();
+        Console.WriteLine("Oliver:\nCheer up buddy, it's not that bad.  There are plenty of fish in that sea.");
+        Console.WriteLine("\n\nPress any key to continue...");
+        Console.ReadLine();
+        Console.Clear();
+        Console.WriteLine("Stefan:\nShe was the best at EVERYTHING and had a figure of a model.");
+        Console.WriteLine("\n\nPress any key to continue...");
+        Console.ReadLine();
+        Console.Clear();
+        Console.WriteLine("Stefan:\nI could never do better I feel.");
+        Console.WriteLine("\n\nPress any key to continue...");
+        Console.ReadLine();
+        Console.Clear();
+        Console.WriteLine("Oliver:\nhmm...That's really rough then.");
+        Console.WriteLine("\n\nPress any key to continue...");
+        Console.ReadLine();
+        Console.Clear();
+        Console.WriteLine("Oliver:\nHey buddy, you mind if I could get your ex-wife's phone number? She sounds amazing!");
+        Console.WriteLine("\n\nPress any key to continue...");
+        Console.ReadLine();
+        Console.Clear();
+        Console.WriteLine("Stefan:\n**cries uncontrollably as he writes down the number.**");
+        Console.WriteLine("\n\nPress any key to continue...");
+        Console.ReadLine();
 
 
       }
       else
       {
-          Console.Clear();
-          Console.WriteLine("UGH!!! You are wasting my time get out of here!");
-          Console.WriteLine("\n\nPress any key to continue...");
-          Console.ReadLine();
+        Console.Clear();
+        Console.WriteLine("UGH!!! You are wasting my time get out of here!");
+        Console.WriteLine("\n\nPress any key to continue...");
+        Console.ReadLine();
 
       }
     }
@@ -476,113 +476,113 @@ namespace MyApp
       Console.WriteLine("\n\nPress any key to continue...");
       Console.ReadLine();
       Console.Clear();
-      Console.WriteLine("Joe:\nYeah I'm his boss, so what! You have a problem with me?.\n\na.) YO!! You stole his wife and killed his dog!\nb.) Instruct Joe to give a toaster to Stefan.\nc.) Gamble to see who steals Stefan's wife.\nWhat would you like to know?");
+      Console.WriteLine("Joe:\nYeah I'm his boss, so what! You have a problem with me?.\n\na.) YO!! You stole his wife and took his dog!\nb.) Buy Joe a drink.\nc.) Gamble to see who steals Stefan's wife.\nWhat would you like to know?");
       choice = Convert.ToChar(Console.ReadLine());
 
       if (choice == 'a')
       {
-          Console.Clear();
-          Console.WriteLine("Joe:\nI did him a favor! **takes another drink**");
-          Console.WriteLine("\n\nPress any key to continue...");
-          Console.ReadLine();
-          Console.Clear();
-          Console.WriteLine("Joe:\nA man like that shouldn't have a wife or live for that matter. Now Get LOST!!");
-          Console.WriteLine("\n\nPress any key to continue...");
-          Console.ReadLine();
-          Console.Clear();
+        Console.Clear();
+        Console.WriteLine("Joe:\nI did him a favor! **takes another drink**");
+        Console.WriteLine("\n\nPress any key to continue...");
+        Console.ReadLine();
+        Console.Clear();
+        Console.WriteLine("Joe:\nA man like him shouldn't have a wife or dog for that matter. Now Get LOST!!");
+        Console.WriteLine("\n\nPress any key to continue...");
+        Console.ReadLine();
+        Console.Clear();
 
       }
       else if (choice == 'b')
       {
-          Console.Clear();
-          Console.WriteLine("Joe:\nWhy in the hell would I give him a toaster?");
-          Console.WriteLine("\n\nPress any key to continue...");
-          Console.ReadLine();
-          Console.Clear();
-          Console.WriteLine("Oliver:\nIt would be a token of good gratitude.  I'm sure that he'll find GREAT use for it.");
-          Console.WriteLine("\n\nPress any key to continue...");
-          Console.ReadLine();
-          Console.Clear();
-          Console.WriteLine("Joe:\nWell, I did steal his wife and killed his dog.  You have a great point.");
-          Console.WriteLine("\n\nPress any key to continue...");
-          Console.ReadLine();
-          Console.Clear();
-          Console.WriteLine("Joe:\n**goes and takes with Stefan and has a toaster over.  Right then Stefan leaves crying with his toaster mumbling something about a bath.**");
-          Console.WriteLine("\n\nPress any key to continue...");
-          Console.ReadLine();
+        Console.Clear();
+        Console.WriteLine("Joe:\nWhy in the hell would you buy me a drink?");
+        Console.WriteLine("\n\nPress any key to continue...");
+        Console.ReadLine();
+        Console.Clear();
+        Console.WriteLine("Oliver:\nIt would be a token of good gratitude. It's not everyday you meet a Legend!");
+        Console.WriteLine("\n\nPress any key to continue...");
+        Console.ReadLine();
+        Console.Clear();
+        Console.WriteLine("Joe:\nWell, I did steal his wife and take his dog. You have a great point. Have a drink, on me!");
+        Console.WriteLine("\n\nPress any key to continue...");
+        Console.ReadLine();
+        Console.Clear();
+        Console.WriteLine("**Both of you drink for awhile till you remember that you have have to make the rent**");
+        Console.WriteLine("\n\nPress any key to continue...");
+        Console.ReadLine();
 
       }
       else if (choice == 'c')
       {
-          int guess = 0;
-          Console.Clear();
-          Console.WriteLine("Oliver:\nOH, You don't deserve Scarlett, HAND HER OVER!!");
+        int guess = 0;
+        Console.Clear();
+        Console.WriteLine("Oliver:\nOH, You don't deserve Scarlett, HAND HER OVER!!");
+        Console.WriteLine("\n\nPress any key to continue...");
+        Console.ReadLine();
+        Console.Clear();
+        Console.WriteLine("Joe:\nListen to the to words coming out of this guys mouth.");
+        Console.WriteLine("\n\nPress any key to continue...");
+        Console.ReadLine();
+        Console.Clear();
+        Console.WriteLine("Joe:\nTell you what, if you could get the number I'm thinking of, between 1-10, Scarlett is all yours!");
+        Console.WriteLine("\n\nPress any key to continue...");
+        Console.ReadLine();
+        Console.Clear();
+        Console.WriteLine("Oliver:\nhmm...You have a deal!");
+        Console.WriteLine("\n\nPress any key to continue...");
+        Console.ReadLine();
+        Console.Clear();
+        Console.WriteLine("Oliver:\nI think the number is....\n\nEnter a number between 1 and 10 to guess:");
+        guess = Convert.ToInt16(Console.ReadLine());
+        Console.Clear();
+        Random rnd = new Random();
+        int rndNum = rnd.Next(1, 10);
+        if (guess == rndNum)
+        {
+          Console.WriteLine("Joe:\nWHAT?! How in the hell did you get that?");
           Console.WriteLine("\n\nPress any key to continue...");
           Console.ReadLine();
           Console.Clear();
-          Console.WriteLine("Joe:\nListen to the to words coming out of this guys mouth.");
+          Console.WriteLine("Joe:\nMan, I was thinking of '" + rndNum + "' .  Which I didn't think you'd get.");
           Console.WriteLine("\n\nPress any key to continue...");
           Console.ReadLine();
           Console.Clear();
-          Console.WriteLine("Joe:\nTell you what, if you could get the number I'm thinking of, between 1-10, Scarlett is all yours!");
+          Console.WriteLine("Joe:\nFINE! Scarlett is all yours.  She was too wild for me anyways.");
           Console.WriteLine("\n\nPress any key to continue...");
           Console.ReadLine();
           Console.Clear();
-          Console.WriteLine("Oliver:\nhmm...You have a deal!");
+          Console.WriteLine("Oliver:\nALRIGHT, I have a new girlfriend! Now I just have to gamble to make some money. LET'S GO!! ");
           Console.WriteLine("\n\nPress any key to continue...");
           Console.ReadLine();
           Console.Clear();
-          Console.WriteLine("Oliver:\nI think the number is....\n\nEnter a number between 1 and 10 to guess:");
-          guess = Convert.ToInt16(Console.ReadLine());
+        }
+        else
+        {
+          Console.WriteLine("Joe:\n**Laughs and then spits in your face**");
+          Console.WriteLine("\n\nPress any key to continue...");
+          Console.ReadLine();
           Console.Clear();
-          Random rnd = new Random();
-          int rndNum = rnd.Next(1, 10);
-          if (guess == rndNum)
-          {
-              Console.WriteLine("Joe:\nWHAT?! How in the hell did you get that?");
-              Console.WriteLine("\n\nPress any key to continue...");
-              Console.ReadLine();
-              Console.Clear();
-              Console.WriteLine("Joe:\nMan, I was thinking of '" + rndNum + "' .  Which I didn't think you'd get.");
-              Console.WriteLine("\n\nPress any key to continue...");
-              Console.ReadLine();
-              Console.Clear();
-              Console.WriteLine("Joe:\nFINE! Scarlett is all yours.  She was too wild for me anyways.");
-              Console.WriteLine("\n\nPress any key to continue...");
-              Console.ReadLine();
-              Console.Clear();
-              Console.WriteLine("Oliver:\nALRIGHT, I have a new girlfriend! Now I just have to gamble to make some money. LET'S GO!! ");
-              Console.WriteLine("\n\nPress any key to continue...");
-              Console.ReadLine();
-              Console.Clear();
-          }
-          else
-          {
-              Console.WriteLine("Joe:\n**Laughs and then spits in your face**");
-              Console.WriteLine("\n\nPress any key to continue...");
-              Console.ReadLine();
-              Console.Clear();
-              Console.WriteLine("Joe:\nYou are an idiot because you were thinking '" + guess + "', when I was thinking '" + rndNum + "'.");
-              Console.WriteLine("\n\nPress any key to continue...");
-              Console.ReadLine();
-              Console.Clear();
-              Console.WriteLine("Joe:\nNow get out of my face before I seriously hurt you!");
-              Console.WriteLine("\n\nPress any key to continue...");
-              Console.ReadLine();
-              Console.Clear();
-              Console.WriteLine("Oliver:\n**walks away feeling shame and even worst then before**");
-              Console.WriteLine("\n\nPress any key to continue...");
-              Console.ReadLine();
-              Console.Clear();
-          }
+          Console.WriteLine("Joe:\nYou are an idiot because you were thinking '" + guess + "', when I was thinking '" + rndNum + "'.");
+          Console.WriteLine("\n\nPress any key to continue...");
+          Console.ReadLine();
+          Console.Clear();
+          Console.WriteLine("Joe:\nNow get out of my face before I seriously hurt you!");
+          Console.WriteLine("\n\nPress any key to continue...");
+          Console.ReadLine();
+          Console.Clear();
+          Console.WriteLine("Oliver:\n**walks away feeling shame and even worst then before**");
+          Console.WriteLine("\n\nPress any key to continue...");
+          Console.ReadLine();
+          Console.Clear();
+        }
 
       }
       else
       {
-          Console.Clear();
-          Console.WriteLine("UGH!!! You are wasting my time get out of here!");
-          Console.WriteLine("\n\nPress any key to continue...");
-          Console.ReadLine();
+        Console.Clear();
+        Console.WriteLine("UGH!!! You are wasting my time get out of here!");
+        Console.WriteLine("\n\nPress any key to continue...");
+        Console.ReadLine();
 
       }
     }
